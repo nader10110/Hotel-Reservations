@@ -256,6 +256,7 @@ Room Type 6 commands the highest price at €182 but also has the highest cancel
 Guests with 3 or more special requests cancel at **0%**. Special requests signal commitment. The hotel should actively encourage guests to make special requests during the booking process to increase engagement and reduce cancellations.
 
 ---
+
 ## 🎯 Three Recommended Actions for Hotel Management
 
 ```
@@ -272,6 +273,87 @@ Guests with 3 or more special requests cancel at **0%**. Special requests signal
 │  11% cancellation vs 37% for online                     │
 │  Potential impact: More reliable, predictable revenue   │
 └─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📂 Dataset Information
+
+**Source:** INN Hotels Group Reservation Dataset
+**Period:** July 2017 — December 2018
+**Records:** 36,238 bookings (after cleaning)
+**Removed:** 37 records (February 29, 2018 — invalid date)
+
+### Data Dictionary
+
+| Column | Description |
+|--------|-------------|
+| Booking_ID | Unique booking identifier |
+| no_of_adults | Number of adults |
+| no_of_children | Number of children |
+| no_of_weekend_nights | Weekend nights booked |
+| no_of_week_nights | Weekday nights booked |
+| type_of_meal_plan | Meal plan selected |
+| required_car_parking_space | Parking requested (0/1) |
+| room_type_reserved | Room type (encoded) |
+| lead_time | Days between booking and arrival |
+| arrival_year | Year of arrival |
+| arrival_month | Month of arrival |
+| arrival_date | Day of arrival |
+| market_segment_type | Booking channel |
+| repeated_guest | Returning guest (0/1) |
+| no_of_previous_cancellations | Prior cancellations |
+| no_of_previous_bookings_not_canceled | Prior completed bookings |
+| avg_price_per_room | Average room price (€) |
+| no_of_special_requests | Number of special requests |
+| booking_status | Canceled / Not_Canceled |
+
+---
+
+## 🚀 How to Use This Project
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/yourusername/hotel-reservations-analytics.git
+```
+
+2. **Open the dataset:**
+   - Located in `/Data/Hotel_Reservations.csv`
+   - 36,238 rows, 19 columns
+
+3. **Open the dashboard:**
+   - Located in `/Dashboard/Tourism_Project.xlsx`
+   - Requires Microsoft Excel 2016 or later
+   - Enable macros for VBA navigation features
+   - Enable Power Pivot add-in if not already active
+
+4. **Navigate the dashboard:**
+   - Use the sidebar buttons to move between pages
+   - Use slicers on each page to filter by segment, year, or room type
+   - Use the "Reset All Filters" button to clear all slicers
+
+---
+
+## 👤 About This Project
+
+This project was built as a complete end-to-end analytics portfolio piece covering:
+
+- **Domain Knowledge:** Tourism & Hospitality KPIs
+- **Data Engineering:** Power Query transformation, Star Schema modeling
+- **Analysis:** 26 business questions answered with DAX
+- **Visualization:** 5-page interactive Excel dashboard
+- **Storytelling:** Business narrative structured for hotel ownership audience
+- **Automation:** VBA for navigation, PDF export, and alert highlighting
+
+---
+
+## 📬 Connect
+
+**LinkedIn:** [Your LinkedIn Profile]
+**GitHub:** [Your GitHub Profile]
+**Email:** [Your Email]
+
 ---
 
 *Built with Microsoft Excel, Power Pivot, DAX, Power Query, and VBA*
+*Dataset: INN Hotels Group — 2017-2018*
